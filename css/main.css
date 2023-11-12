@@ -1,0 +1,149 @@
+body, body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    background-color: #ccc;
+}
+
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.playground{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: 100vw; 
+    height: 56.25vw; /* height:width ratio = 9/16 = .5625  */
+    background: pink;
+    max-height: 100vh;
+    max-width: 177.78vh; /* 16/9 = 1.778 */
+    margin: auto;
+    position: absolute;
+    top:0;bottom:0; /* vertical center */
+    left:0;right:0; /* horizontal center */
+    background-image: url('../img/grass.gif');
+    background-size: cover;    
+}
+
+
+.scoreboard{
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background-color: #4861A5;
+    font-size: 4.2vw;
+    color: white;
+}
+
+.scoreboard span{
+    background-color: transparent;
+    margin-left: 2vw;
+}
+.player{
+    width: 16%;
+    height: 80%;
+    background-color: #333;
+}
+.timer{
+    width: 6%;
+    height: 80%;
+    background-color: #003F3F;
+}
+
+.player img{
+    height: 100%;
+    
+}
+
+.tile {
+    display: flex;
+    width: 10%;
+    height: 17.5%;
+    
+    /* border: 1px gray solid; */
+    background-color: transparent;
+    cursor: crosshair;
+    background-color: transparent;
+	/* border: 1px black solid; */
+}
+
+.start-button {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    inset: 42%;
+    position: absolute;
+    width: 15%;
+    z-index: 1;
+    height: 5%;
+    background-color: #00f4;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.start-button img{
+    background-color: transparent;
+}
+
+.hide{
+    display: none;
+}
+
+.blackout{
+/* background-color: #f005; */
+background-image: url('../img/enemy.gif');
+background-position: center;
+background-size: contain;
+}
+
+
+
+.win {
+    display: none;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background-color: blue;
+    background-image: url('../img/win.gif');
+    background-size: cover;
+    background-position: center;
+}
+
+.even {
+    display: none;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background-color:white;
+    background-image: url('../img/even.gif');
+    background-size: cover;
+    background-position: center;
+}
+
+.loose {
+    display: none;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background-color: red;
+    background-image: url('../img/loose.gif');
+    background-size: cover;
+    background-position: center;
+}
+
+.show{
+    display: flex;
+}
+
+.playground img{
+    object-fit: contain;
+    object-position: center;
+    background-color: transparent;
+}
