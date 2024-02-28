@@ -11,7 +11,7 @@ _My journey to become a full stack developer_
 
 ## 🌟 About
 
-This project is a part of my workbook from Full stack developers course at BIT This is the 6th part of the course – Practice No.1: Simple JS game.
+This project is a part of my workbook from Full stack developers course at BIT This is the 6th part of the course – Practice No.2: Simple JS game.
 
 Projects porpuses are educational only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
